@@ -1,0 +1,17 @@
+$text-black: #161a14;
+$text-white: #e8ede8;
+$text-gray: #6e6e6e;
+$text-gray-light: #c6c6c6; 
+$text-gray-dark: #313131;
+$background-white: #f5f6f4;
+
+$shadow-1: 3px 7px 13px -7.5px rgba(0,0,0,0.3);
+$shadow-2: 0 40px 90px 0 rgba(51, 51, 51, 0.3);
+$shadow-3: 0px 0px 15px 0px rgba(0,0,0,0.5);
+
+@mixin flex-container($direction, $space, $items) {
+  display: flex;
+  align-items: $items;
+  flex-direction: $direction;
+  justify-content: $space;
+}

@@ -1,0 +1,20 @@
+@use "./var";
+
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Spectral:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Anuphan", sans-serif;
+  color: var.$text-black;
+  html,
+  html body {
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+  }
+}
+
+div.App {
+  border: 1px solid red;
+}

@@ -1,0 +1,27 @@
+@use "../../var";
+
+div.Navbar {
+  height: 12vh;
+  border: 1px solid red;
+  box-shadow: var.$shadow-1;
+  max-height: 125px;
+  @include var.flex-container(row, space-between, center);
+  padding: 0 5%;
+  section.logoName {
+    @include var.flex-container(row, center, center);
+    height: 100%;
+    img {
+      height: 75%;
+      margin-right: 20px;
+    }
+    div.name {
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 @use "./var";
+@use "./Components/Navbar/Navbar";
 
 @import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Spectral:wght@700&display=swap");
 
@@ -16,5 +17,6 @@
 }
 
 div.App {
-  border: 1px solid red;
+  background-color: var.$background-white;
+  min-height: 100vh;
 }

@@ -1,0 +1,36 @@
+@use "../../var";
+
+section.Home {
+  div {
+    &.header {
+      height: 60vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/stock-package.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      @include var.flex-container(column, center, center);
+      text-align: center;
+      h3 {
+        font-size: 3rem;
+        font-weight: 500;
+        color: var.$whiter-blue;
+      }
+      h1 {
+        font-size: 3.5rem;
+        color: var.$text-white;
+        margin: 1.5% 0;
+        font-family: "Poppins", sans-serif;
+      }
+      h5 {
+        font-size: 1.5rem;
+        color: var.$text-white;
+        font-weight: 400;
+      } 
+      p {
+        width: 40vw;
+        margin-top: 1.5%;
+        color: var.$text-gray-light;
+      }
+    }
+  }
+}

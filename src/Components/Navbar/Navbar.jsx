@@ -15,19 +15,19 @@ const Navbar = () => {
           <span>Inicio</span>
         </NavLink>
         <NavLink
-          to={"/about"}
+          to={"/nosotros"}
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           <span>Nosotros</span>
         </NavLink>
         <NavLink
-          to={"/services"}
+          to={"/servicios"}
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           <span>Servicios</span>
         </NavLink>
         <NavLink
-          to={"/contact"}
+          to={"/contacto"}
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           <span>Contacto</span>

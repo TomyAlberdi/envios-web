@@ -1,0 +1,13 @@
+@use "../../var";
+
+section.About {
+  @include var.flex-container(column, center, center);
+  padding: 5% 0;
+  div {
+    &.nosotros {
+      width: 60vw;
+      padding: 1.5%;
+      box-shadow: var.$shadow-3;
+    }
+  }
+}

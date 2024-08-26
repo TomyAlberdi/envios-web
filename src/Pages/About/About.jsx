@@ -1,7 +1,9 @@
 const About = () => {
   return (
     <section className="About">
-      about
+      <div className="nosotros">
+        nosotros
+      </div>
     </section>
   )
 }

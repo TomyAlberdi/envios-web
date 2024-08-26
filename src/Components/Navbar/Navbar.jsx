@@ -1,20 +1,37 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="Navbar">
       <section className="logoName">
-        <img src="/delivery-blue.svg" alt="logo" />
-        <div className="name">
-          <h2>Nombre</h2>
-          <p>Subtítulo</p>
-        </div>
+        <img src="/delivery-white.svg" alt="logo" />
+        <h2>Envíos Nombre</h2>
       </section>
       <nav>
-        <Link>Inicio</Link>
-        <Link>Nosotros</Link>
-        <Link>Servicios</Link>
-        <Link>Contacto</Link>
+        <NavLink
+          to={"/"}
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          <span>Inicio</span>
+        </NavLink>
+        <NavLink
+          to={"/about"}
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          <span>Nosotros</span>
+        </NavLink>
+        <NavLink
+          to={"/services"}
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          <span>Servicios</span>
+        </NavLink>
+        <NavLink
+          to={"/contact"}
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          <span>Contacto</span>
+        </NavLink>
       </nav>
     </div>
   );

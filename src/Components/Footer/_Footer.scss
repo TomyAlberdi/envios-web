@@ -1,0 +1,35 @@
+@use "../../var";
+
+footer {
+  background-color: var.$primary-blue;
+  padding: 2.5% 5%;
+  @include var.flex-container(row, flex-start, flex-start);
+  div {
+    min-width: 25%;
+    border: 1px solid red;
+    &.menu {
+      @include var.flex-container(column, flex-start, flex-start);
+      a {
+        @include var.flex-container(row, center, center);
+        padding: 2.5%;
+        text-decoration: none;
+        span {
+          color: var.$text-white;
+          font-size: 1.25rem;
+        }
+        svg {
+          font-size: 2rem;
+          margin-right: 10px;
+          path {
+            fill: var.$text-white;
+          }
+        }
+        &:hover {
+          span {
+            border-bottom: 2px solid var.$text-white;
+          }
+        }
+      }
+    }
+  }
+}

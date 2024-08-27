@@ -1,0 +1,38 @@
+@use "../../var";
+
+div.nosotros {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 60vw;
+  min-width: 750px;
+  padding: 1.5%;
+  margin: 3% 0;
+  box-shadow: var.$shadow-3;
+  @include var.flex-container(row, space-between, flex-start);
+  gap: 2%;
+  section {
+    &.icon {
+      width: 30%;
+    }
+    &.text {
+      width: 70%;
+      h2 {
+        font-size: 1.5rem;
+        background-color: var.$primary-blue;
+        color: var.$text-white;
+        padding: 1% 2%;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+      }
+      p {
+        padding: 2% 0;
+      }
+      ul {
+        li {
+          margin: 0 0 1% 2.5%; 
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

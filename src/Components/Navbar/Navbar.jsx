@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className="Navbar">
       <section className="logoName">
         <img src="/delivery-white.svg" alt="logo" />
-        <h2>Envíos Nombre</h2>
+        <h2>Lorem Ipsum</h2>
       </section>
       <nav>
         <NavLink

@@ -1,3 +1,5 @@
+import Introduction from "../../Components/Introduction/Introduction";
+
 const Home = () => {
   return (
     <section className="Home">
@@ -5,11 +7,8 @@ const Home = () => {
         <h3>Lorem ipsum dolor </h3>
         <h1>Lorem ipsum dolor sit amet</h1>
         <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi
-          nunc, ultrices fringilla tempus vel, finibus vel tortor.
-        </p>
       </div>
+      <Introduction />
     </section>
   );
 };

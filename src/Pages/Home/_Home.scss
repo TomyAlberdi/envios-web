@@ -13,7 +13,7 @@ section.Home {
       h3 {
         font-size: 3rem;
         font-weight: 500;
-        color: var.$whiter-blue;
+        color: var.$secondary-red;
       }
       h1 {
         font-size: 4rem;
@@ -22,15 +22,10 @@ section.Home {
         font-family: "Poppins", sans-serif;
       }
       h5 {
-        font-size: 1.5rem;
+        font-size: 1.26rem;
         color: var.$text-white;
         font-weight: 400;
       } 
-      p {
-        width: 40vw;
-        margin-top: 1.5%;
-        color: var.$text-gray-light;
-      }
     }
   }
 }

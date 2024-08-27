@@ -1,0 +1,50 @@
+@use "../../var";
+
+div.Introduction {
+  @include var.flex-container(column, center, center);
+  padding: 3% 0 2.5%;
+  h5 {
+    font-size: 1.25rem;
+    color: var.$dark-blue;
+  }
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0 0 2%;
+  }
+  section.list {
+    @include var.flex-container(column, center, center);
+    gap: 25px;
+    article {
+      @include var.flex-container(row, space-between, flex-start);
+      width: 50vw;
+      max-width: 1000px;
+      padding: 1.5%;
+      box-shadow: var.$shadow-3;
+      border-radius: 5px;
+      background-color: #ffffff;
+      padding: 2.5%;
+      div {
+        @include var.flex-container(column, center, flex-start);
+        &.svgContainer {
+          width: 20%;
+        }
+        &.dataContainer {
+          width: 78%;
+          h3 {
+            color: var.$secondary-red;
+            font-size: 2.25rem;
+            font-weight: 600;
+          }
+        }
+      }
+      &:nth-child(odd) {
+        margin-right: 10%;
+      }
+      &:nth-child(even) {
+        margin-left: 10%;
+      }
+    }
+  }
+}

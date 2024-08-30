@@ -1,12 +1,12 @@
 @use "../../var";
 
-div.nosotros {
+div.nosotros_template {
   background-color: #ffffff;
   border-radius: 5px;
   width: 60vw;
   min-width: 750px;
   padding: 1.5%;
-  margin: 3% 0;
+  margin: 3% 0 2%;
   box-shadow: var.$shadow-3;
   @include var.flex-container(row, space-between, flex-start);
   gap: 2%;
@@ -35,5 +35,9 @@ div.nosotros {
         }
       }
     }
+  }
+  &.location {
+    margin-top: 0;
+    @include var.flex-container(row-reverse, space-between, flex-start);
   }
 }

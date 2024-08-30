@@ -1,11 +1,11 @@
 const Nosotros = () => {
   return (
-    <div className="nosotros">
+    <div className="nosotros_template">
       <section className="icon">
         <object data="/icon-delivery-path.svg" type="image/svg+xml"></object>
       </section>
       <section className="text">
-        <h2>Lorem Ipsum</h2>
+        <h2>Info negocio</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipiscing elit gravida
           ultrices, maecenas magnis mus orci porttitor quisque ultricies.

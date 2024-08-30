@@ -1,3 +1,4 @@
+import LocationInfo from "../../Components/LocationInfo/LocationInfo";
 import Nosotros from "../../Components/Nosotros/Nosotros";
 
 const About = () => {
@@ -62,6 +63,7 @@ const About = () => {
         />
       </svg>
       <Nosotros />
+      <LocationInfo />
     </section>
   );
 };

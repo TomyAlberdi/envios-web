@@ -2,36 +2,50 @@
 
 div.Introduction {
   @include var.flex-container(column, center, center);
-  padding: 3% 0 2.5%;
-  h5 {
-    font-size: 1.25rem;
-    color: var.$dark-blue;
-  }
-  h2 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 0 0 2%;
+  padding: 0 0 2.5%;
+  section.introductionTexts {
+    position: relative;
+    width: 100%;
+    h5 {
+      margin-top: 3rem;
+      font-size: 1.25rem;
+      color: var.$text-gray;
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 3rem;
+    }
+    svg.introductionSvg {
+      position: absolute;
+      height: 100%;
+      top: -2px;
+      left: -1px;
+    }
   }
   section.list {
     @include var.flex-container(column, center, center);
-    gap: 25px;
     article {
       @include var.flex-container(row, space-between, flex-start);
-      width: 50vw;
-      max-width: 1000px;
-      padding: 1.5%;
-      box-shadow: var.$shadow-3;
-      border-radius: 5px;
+      position: relative;
+      height: 200px;
+      width: 100%;
+      padding: 1.5% 22.5%;
       background-color: #ffffff;
-      padding: 2.5%;
       div {
         @include var.flex-container(column, center, flex-start);
         &.svgContainer {
-          width: 20%;
+          @include var.flex-container(row, flex-start, center);
+          height: 150px;
+          width: 150px;
+          svg {
+            height: 100%;
+          }
         }
         &.dataContainer {
-          width: 78%;
+          width: calc(100% - 180px);
           h3 {
             color: var.$secondary-red;
             font-size: 2.25rem;
@@ -40,10 +54,37 @@ div.Introduction {
         }
       }
       &:nth-child(odd) {
-        margin-right: 10%;
+        background-color: var.$primary-blue;
+        div {
+          &.dataContainer {
+            h3 {
+              color: var.$accent-yellow;
+            }
+            p {
+              color: var.$text-gray-light;
+            }
+          }
+          &.svgContainer {
+            svg {
+              path {
+                fill: var.$text-white;
+              }
+            }
+          }
+        }
       }
       &:nth-child(even) {
-        margin-left: 10%;
+        div {
+          &.svgContainer {
+            justify-content: flex-end;
+          }
+        }
+      }
+      svg.decorationSvg {
+        position: absolute;
+        height: 100%;
+        right: -1px;
+        top: -2px;
       }
     }
   }

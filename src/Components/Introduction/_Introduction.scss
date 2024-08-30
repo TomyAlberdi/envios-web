@@ -4,10 +4,11 @@ div.Introduction {
   @include var.flex-container(column, center, center);
   padding: 0 0 2.5%;
   section.introductionTexts {
+    @include var.flex-container(column, center, center);
     position: relative;
     width: 100%;
+    height: 28vh;
     h5 {
-      margin-top: 3rem;
       font-size: 1.25rem;
       color: var.$text-gray;
       text-align: center;
@@ -16,7 +17,28 @@ div.Introduction {
       text-align: center;
       font-size: 3rem;
       font-weight: 800;
-      margin-bottom: 3rem;
+      padding: 10px 0;
+    }
+    button {
+      @include var.flex-container(row, center, center);
+      width: 10%;
+      height: 40px;
+      background-color: var.$primary-blue;
+      border: none;
+      border-radius: 5px;
+      box-shadow: var.$shadow-3;
+      cursor: pointer;
+      font-size: 2rem;
+      transition: all 0.25s ease-in-out;
+      svg {
+        path {
+          fill: var.$text-white;
+        }
+      }
+      &:hover {
+        background-color: var.$light-blue;
+        transition: all 0.25s ease-in-out;
+      }
     }
     svg.introductionSvg {
       position: absolute;

@@ -1,9 +1,20 @@
+import { FaChevronDown } from "react-icons/fa";
+
 const Introduction = () => {
+
+  const moveDown = () => {
+    const introduction = document.getElementById("introduction");
+    introduction.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <div className="Introduction">
       <section className="introductionTexts">
         <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h5>
-        <h2>Por qué elegirnos</h2>
+        <h2 id="introduction">Por qué elegirnos</h2>
+        <button onClick={moveDown}>
+          <FaChevronDown />
+        </button>
         <svg
           viewBox="-0.957 98.0221 401.923 252.4359"
           xmlns="http://www.w3.org/2000/svg"

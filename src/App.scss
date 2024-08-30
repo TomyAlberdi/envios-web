@@ -6,6 +6,7 @@
 @use "./Components/Nosotros/Nosotros";
 @use "./Components/ScrollButton/ScrollButton";
 @use "./Components/Introduction/Introduction";
+@use "./Components/WelcomeScreen/WelcomeScreen";
 
 @import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
@@ -28,4 +29,7 @@ div.App {
   background-color: var.$background-white;
   min-height: 100vh;
   position: relative;
+  &.Loading {
+    touch-action: none;
+  }
 }

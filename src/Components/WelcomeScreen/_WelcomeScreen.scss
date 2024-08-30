@@ -1,0 +1,67 @@
+@use "../../var";
+
+div.WelcomeScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  -webkit-animation: fade-out 0.5s ease-out 3s both;
+  animation: fade-out 0.5s ease-out 3s both;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(37, 35, 141, 0.6),
+    rgba(37, 35, 141, 0.6)
+  );
+  backdrop-filter: blur(150px);
+  @include var.flex-container(column, center, center);
+  img {
+    width: 30vw;
+    animation: img-go-to-right 0.5s ease-out 2.5s both;
+    -webkit-animation: img-go-to-right 0.5s ease-out 2.5s both;
+  }
+  h1 {
+    color: var.$text-white;
+    font-size: 4.5rem;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    -webkit-animation: fade-out 1s ease-out 2.75s both;
+    animation: fade-out 1s ease-out 2.75s both;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes img-go-to-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(65vw);
+  }
+}
+
+@-webkit-keyframes img-go-to-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(65vw);
+  }
+}

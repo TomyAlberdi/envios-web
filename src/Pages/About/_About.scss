@@ -2,6 +2,7 @@
 
 section.About {
   @include var.flex-container(column, center, center);
+  position: relative;
   div.header {
     width: 100%;
     height: 60vh;
@@ -17,5 +18,11 @@ section.About {
       font-family: "Poppins", sans-serif;
       font-weight: 600;
     }
+  }
+  svg.decorationSvg1 {
+    position: absolute;
+    left: -1px;
+    height: 50vh;
+    top: calc(60vh - 3px);
   }
 }

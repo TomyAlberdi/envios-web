@@ -10,6 +10,7 @@ div.nosotros {
   box-shadow: var.$shadow-3;
   @include var.flex-container(row, space-between, flex-start);
   gap: 2%;
+  z-index: 15;
   section {
     &.icon {
       width: 30%;

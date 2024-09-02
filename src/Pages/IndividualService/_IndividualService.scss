@@ -1,5 +1,54 @@
 @use "../../var";
 
 section.IndividualService {
-  border: 1px solid red;
+  padding: 5% 10%;
+  @include var.flex-container(column, center, center);
+  gap: 2rem;
+  section {
+    &.serviceInfo {
+      display: grid;
+      grid-template-columns: 1fr 1.75fr;
+      grid-template-rows: 0.25fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      div {
+        @include var.flex-container(row, flex-start, flex-start);
+        &.div1 {
+          grid-area: 1 / 1 / 3 / 2;
+          height: 400px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-radius: 5px;
+        }
+        &.div2 {
+          grid-area: 1 / 2 / 2 / 3;
+          align-items: center;
+          h1 {
+            font-size: 2.5rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+          }
+        }
+        &.div3 {
+          grid-area: 2 / 2 / 3 / 3;
+          line-height: 1.75;
+        }
+      }
+    }
+    &.relatedServices {
+      width: 100%;
+      @include var.flex-container(column, flex-start, flex-start); 
+      h2 {
+        font-size: 2rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        padding: 2% 0;
+      }
+      div.relatedServicesList {
+        @include var.flex-container(row, flex-start, flex-start);
+        gap: 2rem;
+      }
+    }
+  }
 }

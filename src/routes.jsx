@@ -4,6 +4,7 @@ import Home from "./Pages/Home/Home.jsx";
 import About from "./Pages/About/About.jsx";
 import Services from "./Pages/Services/Services.jsx";
 import Contact from "./Pages/Contact/Contact.jsx";
+import IndividualService from "./Pages/IndividualService/IndividualService.jsx";
 
 const CustomRouter = () => {
   return useRoutes([
@@ -34,6 +35,16 @@ const CustomRouter = () => {
         {
           index: true,
           element: <Services />,
+        },
+      ],
+    },
+    {
+      path: "/servicios/:url",
+      element: <Layout />,
+      children: [
+        {
+          index: true,
+          element: <IndividualService />,
         },
       ],
     },

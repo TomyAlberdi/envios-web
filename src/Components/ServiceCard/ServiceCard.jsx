@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
+
 const ServiceCard = ({ data }) => {
   return (
     <article className="ServiceCard">
@@ -11,6 +13,9 @@ const ServiceCard = ({ data }) => {
         <p>
           {data.description}
         </p>
+        <Link to={`/servicios/${data.url}`}>
+          VER MÁS
+        </Link>
       </section>
     </article>
   );

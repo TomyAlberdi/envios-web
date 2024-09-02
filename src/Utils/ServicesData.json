@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Mercado Envíos Flex",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales in tortor consequat mattis.",
+    "img_url": "/Mercado-Envios.webp"
+  },
+  {
+    "title": "Envíos E-Commerce",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales in tortor consequat mattis. Curabitur at erat ac est faucibus mattis ut at ex. Nunc eget pharetra velit. Nullam dictum aliquet lacus, sed molestie lectus tempus sit amet.",
+    "img_url": "/stock-ecommerce.jpeg"
+  },
+  {
+    "title": "Mensajería Particular",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales in tortor consequat mattis. Curabitur at erat ac est faucibus mattis ut at ex. Nunc eget pharetra velit.",
+    "img_url": "stock-mensajeria.jpeg"
+  }
+]

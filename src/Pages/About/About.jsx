@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className="About">
       <div className="header">
-        <h1>Quienes somos</h1>
+        <h1>Quienes Somos</h1>
       </div>
       <svg
         viewBox="-0.957 98.0221 401.923 301.8459"

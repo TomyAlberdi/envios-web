@@ -4,14 +4,7 @@ section.About {
   @include var.flex-container(column, center, center);
   position: relative;
   div.header {
-    width: 100%;
-    height: 60vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/stock-package-2.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    @include var.flex-container(column, center, center);
-    text-align: center;
     h1 {
       font-size: 5rem;
       color: var.$text-white;

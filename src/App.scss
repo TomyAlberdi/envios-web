@@ -7,6 +7,9 @@
 @use "./Components/ScrollButton/ScrollButton";
 @use "./Components/Introduction/Introduction";
 @use "./Components/WelcomeScreen/WelcomeScreen";
+@use "./Pages/Services/Services";
+@use "./Components/ServiceCard/ServiceCard";
+@use "./Components/ServicesList/ServicesList";
 
 @import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
@@ -33,4 +36,14 @@ div.App {
   &.Loading {
     touch-action: none;
   }
+}
+
+div.header {
+  width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include var.flex-container(column, center, center);
+  text-align: center;
 }

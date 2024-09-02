@@ -1,0 +1,16 @@
+@use "../../var";
+
+section.Services {
+  div {
+    &.header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("/stock-package-4.jpeg");
+      h1 {
+        font-size: 4rem;
+        color: var.$text-white;
+        margin: 1.5% 0;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+}

@@ -5,9 +5,10 @@ footer {
   padding: 2.5% 5%;
   @include var.flex-container(row, flex-start, flex-start);
   div {
-    min-width: 25%;
-    border: 1px solid red;
-    &.menu, &.services {
+    width: 25%;
+    &.menu,
+    &.services,
+    &.contact {
       @include var.flex-container(column, flex-start, flex-start);
       a {
         @include var.flex-container(row, center, center);
@@ -19,16 +20,52 @@ footer {
         }
         svg {
           font-size: 2rem;
-          margin-right: 10px;
-          path {
-            fill: var.$text-white;
-          }
         }
         &:hover {
           span {
             border-bottom: 2px solid var.$text-white;
           }
         }
+      }
+    }
+    &.menu,
+    &.services {
+      a {
+        svg {
+          margin-right: 10px;
+          path {
+            fill: var.$text-white;
+          }
+        }
+      }
+    }
+    &.contact {
+      a {
+        background-color: var.$background-white;
+        margin-bottom: 3.5%;
+        border-radius: 100px;
+        &.instagramLink {
+          svg {
+            path {
+              fill: var.$secondary-red;
+            }
+          }
+        }
+        &.emailLink {
+          svg {
+            path {
+              &:last-child {
+                fill: var.$secondary-red;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.info {
+      margin-top: 1%;
+      span {
+        color: var.$text-gray-light;
       }
     }
   }

@@ -5,12 +5,6 @@ section.About {
   position: relative;
   div.header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/stock-package-2.jpeg");
-    h1 {
-      font-size: 5rem;
-      color: var.$text-white;
-      font-family: "Poppins", sans-serif;
-      font-weight: 600;
-    }
   }
   svg.decorationSvg1 {
     position: absolute;

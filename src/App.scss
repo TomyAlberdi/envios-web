@@ -11,6 +11,7 @@
 @use "./Components/ServiceCard/ServiceCard";
 @use "./Components/ServicesList/ServicesList";
 @use "./Pages/IndividualService/IndividualService";
+@use "./Pages/Contact/Contact";
 
 @import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
@@ -47,4 +48,10 @@ div.header {
   background-position: center;
   @include var.flex-container(column, center, center);
   text-align: center;
+  h1 {
+    font-size: 5rem;
+    color: var.$text-white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
 }

@@ -3,7 +3,8 @@
 section.Home {
   div {
     &.header {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/stock-package.jpeg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("/stock-package.jpeg");
       h3 {
         font-size: 3rem;
         font-weight: 500;
@@ -19,7 +20,12 @@ section.Home {
         font-size: 1.26rem;
         color: var.$text-white;
         font-weight: 400;
-      } 
+      }
     }
+  }
+  h2.titleServices {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 800;
   }
 }

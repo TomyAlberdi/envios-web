@@ -1,4 +1,5 @@
 import Introduction from "../../Components/Introduction/Introduction";
+import ServicesList from "../../Components/ServicesList/ServicesList";
 
 const Home = () => {
   return (
@@ -9,6 +10,8 @@ const Home = () => {
         <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h5>
       </div>
       <Introduction />
+      <h2 className="titleServices">Nuestros Servicios</h2>
+      <ServicesList />
     </section>
   );
 };

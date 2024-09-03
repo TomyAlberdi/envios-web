@@ -2,6 +2,84 @@
 
 section.Contact {
   div.header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/stock-contact.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("/stock-contact.jpeg");
+  }
+  div.body {
+    padding: 1.5% 5% 2.5%;
+    @include var.flex-container(column, center, center);
+    h3 {
+      font-size: 2rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 1.5%;
+    }
+    section.contactGrid {
+      width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      height: 60vh;
+      div, a {
+        box-shadow: var.$shadow-3;
+        border-radius: 3px;
+        @include var.flex-container(row, flex-start, center);
+        background-color: var.$background-white;
+        cursor: pointer;
+        &:not(.div1) {
+          padding: 0 5%;
+          span {
+            font-size: 1.4rem;
+            color: var.$text-gray-dark;
+            font-family: "Poppins", sans-serif;
+          }
+          svg {
+            font-size: 3rem;
+            margin-right: 20px;
+            path {
+              fill: var.$secondary-red-dark;
+            }
+          }
+          &.div3 {
+            path {
+              fill: none;
+              &:last-child {
+                fill: var.$secondary-red-dark;
+              }
+            }
+          }
+          &.div4, &.div5 {
+            padding: 0 10%;
+          }
+        }
+        &.div1 {
+          grid-area: 1 / 1 / 5 / 4;
+          iframe {
+            border-radius: 3px;
+            border: none;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &.div2 {
+          grid-area: 1 / 4 / 2 / 6;
+        }
+        &.div3 {
+          grid-area: 2 / 4 / 3 / 6;
+        }
+        &.div4 {
+          grid-area: 3 / 4 / 4 / 5;
+        }
+        &.div5 {
+          grid-area: 3 / 5 / 4 / 6;
+        }
+        &.div6 {
+          grid-area: 4 / 4 / 5 / 6;
+        }
+      }
+    }
   }
 }

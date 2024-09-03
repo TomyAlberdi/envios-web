@@ -1,0 +1,38 @@
+@use "../../var";
+
+div.ScrollButton {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 100;
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  background-color: var.$secondary-red;
+  box-shadow: var.$shadow-3;
+  @include var.flex-container(row,center,center);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  animation: hoverTranlateY 1s ease-in-out infinite;
+  &.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  svg {
+    font-size: 50px;
+    path {
+      fill: var.$text-white;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  @keyframes hoverTranlateY {
+    0%, 100% {
+      transform: translateY(-10px);
+  }
+  50% {
+      transform: translateY(0px);
+  }
+  }
+}

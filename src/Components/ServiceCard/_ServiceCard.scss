@@ -1,0 +1,61 @@
+@use "../../var";
+
+article.ServiceCard {
+  border-radius: 5px;
+  box-shadow: var.$shadow-2;
+  @include var.flex-container(column, flex-start, center);
+  width: 350px;
+  height: 500px;
+  transition: all 0.3s ease-in-out;
+  section {
+    width: 100%;
+    &.image {
+      height: 40%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 5px 5px 0 0;
+    }
+    &.data {
+      background-color: var.$background-white;
+      height: 60%;
+      padding: 0 4%;
+      border-radius: 0 0 5px 5px;
+      overflow: hidden;
+      @include var.flex-container(column, flex-start, center);
+      h3 {
+        font-size: 1.25rem;
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        height: 15%;
+        @include var.flex-container(row, flex-start, center);
+      }
+      p {
+        line-height: 1.75;
+        color: var.$text-gray-dark;
+        height: 65%;
+      }
+      a {
+        width: 100%;
+        @include var.flex-container(row, center, center);
+        height: 15%;
+        background-color: var.$secondary-red-dark;
+        color: var.$text-white;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.25s ease-in-out;
+        font-size: 1.25rem;
+        &:hover {
+          background-color: var.$secondary-red;
+          transition: all 0.25s ease-in-out;
+        }
+      }
+    }
+  }
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+}

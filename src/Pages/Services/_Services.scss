@@ -1,0 +1,10 @@
+@use "../../var";
+
+section.Services {
+  div {
+    &.header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("/stock-package-4.jpeg");
+    }
+  }
+}

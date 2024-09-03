@@ -1,0 +1,29 @@
+@use "../../var";
+
+section.Home {
+  div {
+    &.header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("/stock-package.jpeg");
+      h3 {
+        font-size: 3rem;
+        font-weight: 500;
+        color: var.$secondary-red;
+      }
+      h1 {
+        margin: 1.5% 0;
+      }
+      h5 {
+        font-size: 1.26rem;
+        color: var.$text-white;
+        font-weight: 400;
+      }
+    }
+  }
+  h2.titleServices {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 800;
+    padding: 2% 0;
+  }
+}

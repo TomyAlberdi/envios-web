@@ -1,0 +1,7 @@
+@use "../../var";
+
+div.ServicesList {
+  padding: 2.5% 5%;
+  @include var.flex-container(row, center, center);
+  gap: 3rem;
+}

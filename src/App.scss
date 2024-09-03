@@ -1,6 +1,21 @@
 @use "./var";
+@use "./Components/Navbar/Navbar";
+@use "./Pages/Home/Home";
+@use "./Components/Footer/Footer";
+@use "./Pages/About/About";
+@use "./Components/Nosotros/Nosotros";
+@use "./Components/ScrollButton/ScrollButton";
+@use "./Components/Introduction/Introduction";
+@use "./Components/WelcomeScreen/WelcomeScreen";
+@use "./Pages/Services/Services";
+@use "./Components/ServiceCard/ServiceCard";
+@use "./Components/ServicesList/ServicesList";
+@use "./Pages/IndividualService/IndividualService";
+@use "./Pages/Contact/Contact";
 
-@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Spectral:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -16,5 +31,27 @@
 }
 
 div.App {
-  border: 1px solid red;
+  background-color: var.$background-white;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  &.Loading {
+    touch-action: none;
+  }
+}
+
+div.header {
+  width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include var.flex-container(column, center, center);
+  text-align: center;
+  h1 {
+    font-size: 5rem;
+    color: var.$text-white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
 }

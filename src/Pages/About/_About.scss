@@ -1,0 +1,15 @@
+@use "../../var";
+
+section.About {
+  @include var.flex-container(column, center, center);
+  position: relative;
+  div.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/stock-package-2.jpeg");
+  }
+  svg.decorationSvg1 {
+    position: absolute;
+    left: -1px;
+    height: 50vh;
+    top: calc(60vh - 3px);
+  }
+}

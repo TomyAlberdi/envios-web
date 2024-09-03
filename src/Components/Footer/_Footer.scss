@@ -1,0 +1,72 @@
+@use "../../var";
+
+footer {
+  background-color: var.$primary-blue;
+  padding: 2.5% 5%;
+  @include var.flex-container(row, flex-start, flex-start);
+  div {
+    width: 25%;
+    &.menu,
+    &.services,
+    &.contact {
+      @include var.flex-container(column, flex-start, flex-start);
+      a {
+        @include var.flex-container(row, center, center);
+        padding: 2.5%;
+        text-decoration: none;
+        span {
+          color: var.$text-white;
+          font-size: 1.25rem;
+        }
+        svg {
+          font-size: 2rem;
+        }
+        &:hover {
+          span {
+            border-bottom: 2px solid var.$text-white;
+          }
+        }
+      }
+    }
+    &.menu,
+    &.services {
+      a {
+        svg {
+          margin-right: 10px;
+          path {
+            fill: var.$text-white;
+          }
+        }
+      }
+    }
+    &.contact {
+      a {
+        background-color: var.$background-white;
+        margin-bottom: 3.5%;
+        border-radius: 100px;
+        &.instagramLink {
+          svg {
+            path {
+              fill: var.$secondary-red;
+            }
+          }
+        }
+        &.emailLink {
+          svg {
+            path {
+              &:last-child {
+                fill: var.$secondary-red;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.info {
+      margin-top: 1%;
+      span {
+        color: var.$text-gray-light;
+      }
+    }
+  }
+}
